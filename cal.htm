@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Magic Calculator</title>
+    <link rel="icon" href="assets/images/calculatorpic.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">5
+         
+        <div class="result">
+            <button type="text" class="result-screen" id="result"></button>
+        </div>
+3
+   <div class="">
+       <button type="button" class="clear" onclick="clearDisplay()">C</button>
+       <button type="button" onclick="deleteCharacter()">←</button>
+       <button type="button" class="division" onclick="appendCharacter('÷')">÷</button>
+   </div>
+   
+   <div class="">
+       <button type="button" onclick="appendCharacter('7')">7</button>
+       <button type="button" onclick="appendCharacter('8')">8</button>
+       <button type="button" onclick="appendCharacter('9')">9</button>
+       <button type="button" onclick="appendCharacter('×')">×</button>
+   </div>
+
+   <div class="">
+       <button type="button" onclick="appendCharacter('4')">4</button>
+       <button type="button" onclick="appendCharacter('5')">5</button>
+       <button type="button" onclick="appendCharacter('6')">6</button>
+       <button type="button" onclick="appendCharacter('-')">-</button>
+   </div>
+
+   <div class="">
+       <button type="button" onclick="appendCharacter('1')">1</button>
+       <button type="button" onclick="appendCharacter('2')">2</button>
+       <button type="button" onclick="appendCharacter('3')">3</button>
+       <button type="button" onclick="appendCharacter('+')">+</button>
+   </div>
+
+   <div class="">
+       <button type="button"  class="zero" onclick="appendCharacter('0')">0</button>
+       <button type="button" class="equal" onclick="calculateResult()">=</button>
+   </div>
+  </div>
+</div>
+
+  <script src="./calculator.js"></script>
+</body>
+</html>
